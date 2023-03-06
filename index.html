@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevDetective - Soumya</title>
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container" data-container>
+        <!-- Header Section -->
+        <div class="header-section">
+          <h1 class="header-section-heading" data-headerSectionHeading>DevDetective</h1>
+          <button class="theme-change-button" data-themeChange>
+            <p class="theme-name" data-themeName>DARK</p>
+            <i class="fa-solid fa-moon" data-moon></i>
+            <img src="./assets/images/sun-icon.svg" alt="" class="sun-icon" data-sun>
+          </button>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section" data-searchSection>
+          <label for="search-input-section" class="search-input-label-section">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              placeholder="Enter a GitHub username..."
+              class="search-input-section"
+              id="search-input-section"
+              title="Please fill out this field."
+              data-getUserName
+            />
+          <i class="fa-solid fa-xmark" style="cursor: pointer;" data-crossMark></i>
+          <p class="error-msg" data-errorMsg>no search results</p>
+          </label>
+          <button type="submit" class="search-section-butoon" data-serchButton>
+            Search
+          </button>
+        </div>
+
+        <!-- Search Details Rendar Section  -->
+        <div class="search-details-section" data-SearchDetailsSection>
+
+
+          <!-- Left Side Image Section -->
+          <div class="left-side-image-section">
+            <img src="" alt="" data-avatarSection />
+          </div>
+
+          <!-- Right Side User Details -->
+          <div class="right-side-details-section">
+
+            <!-- name And Joined Date Section-->
+            <div class="profile-info-wrapper">
+              <div class="profile-name">
+                <p class="name" data-profileName></p>
+                <a href="" class="profile-link" data-profileLink></a>
+              </div>
+              <p class="joined-date" data-joinedDate></p>
+            </div>
+
+            <!-- Profile Description -->
+            <div class="profile-desc">
+              <p class="profile-bio" data-profileBio></p>
+            </div>
+
+            <!-- Repos Followers Following Details -->
+            <div class="repos-follows-details" data-reposFollowers>
+              <div class="repos">
+                <p>Repos</p>
+                <p class="repos-number number-bold" data-reposNumber></p>
+              </div>
+              <div class="followers">
+                <p>Followers</p>
+                <p class="followers-number number-bold" data-followersNumber></p>
+              </div>
+              <div class="following">
+                <p>Following</p>
+                <p class="following-number number-bold" data-followingNumber></p>
+              </div>
+            </div>
+
+            <!-- Location Links Deatils Section -->
+            <div class="footer-details">
+              <div class="location-detail">
+                <i class="fa-solid fa-location-dot icon"></i>
+                <p class="loaction-name" data-locationName></p>
+              </div>
+              <div class="github-link-section location-detail">
+                <i class="fa-solid fa-link icon"></i>
+                <a href="" class="github-link" target="_blank" data-githubLink></a>
+              </div>
+              <div class="twitter-section location-detail">
+                <i class="fa-brands fa-twitter icon"></i>
+                <a href="" class="twitter-link" target="_blank" data-twitterLink></a>
+              </div>
+              <div class="company-name-section location-detail">
+                <!-- <img src="./assets/images/company-icon.svg" alt="" data-companyIcon> -->
+                <i class="fa-solid fa-building icon" data-companyIcon></i>
+                <p class="company-name" data-companyName></p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <script
+      src="https://kit.fontawesome.com/6fbe9edf18.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
